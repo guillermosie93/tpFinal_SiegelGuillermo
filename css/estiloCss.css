@@ -1,0 +1,338 @@
+.body--contain{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display:flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.btn--style{
+    background-color: white;
+    height: 80px;
+    width: 200px;
+    border-radius: 20px;
+    align-self: center;
+    margin-top: 25px;
+    z-index: 10;
+}
+
+#cantidad{
+   display: none;
+}
+
+@keyframes scale{
+    0%{visibility: visible;
+        transform: scale(1,1);}
+    50%{transform: scale(3,3);}
+    100%{opacity: 0;
+        display: none;
+    }
+}
+
+#btnContador, #btnContador:active{
+    background-color: #9b111e;
+    border: 2px solid white;
+    color: white;
+    align-self: center;
+    position: relative;
+    top: 250px;
+
+}
+
+
+#galaxia{
+    height: 0px;
+    width: 0px;
+    align-self: center;
+    background-image: url(../media/galaxia.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative;
+/*     border-radius: 360px; */
+}
+
+#planeta{
+    height: 0px;
+    width: 0px;
+    align-self: center;
+    z-index: 2;
+    background-image: url(../media/planeta.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    position: absolute;
+    top: 150px;
+    opacity: 0;
+}
+#museo img{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin-left: 35%;
+}
+
+#museo:hover img, #correo:hover img, #entorno:hover img{
+    transform: scale(1.2,1.2);
+    transition: .5s;
+}
+
+#correo{
+    position: absolute;
+    left: 65%;
+    top: 100px;
+
+}
+#correo img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+#entorno img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 350px;
+}
+
+#marciano{
+    width: 100px;
+    height: 100px;
+    background-image: url(../media/marciano.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 2px;
+}
+
+#marciano::before{
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    content: attr(data-content)'Esta es mi galaxia NX-568...Siguiente->';
+    left: 85px;
+    bottom: 60px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    opacity: 100%;
+}
+
+#marciano.change::before{
+    content: 'Haz click en ella para conocer mi planeta, NURBUS';
+}
+#marciano.planeta::before{
+    content: 'Bienvenido a  NURBUS, haz click en el para conocerlo';
+}
+
+#supPLaneta{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+#interior{
+    border: 2px solid red;
+    height: 50px;
+    width: 50px;
+}
+
+
+/*historias*/
+
+#body-historias{
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: 6fr 6fr;
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas: 
+    "target-1 target-2"
+    "target-3 target-4";
+    justify-items: center;
+    align-items: center;
+    row-gap: 100px;
+    
+}
+
+.target-1{
+    grid-area: target-1;
+} 
+.target-2{
+    grid-area: target-2;
+} 
+.target-3{
+    grid-area: target-3;
+} 
+.target-4{
+    grid-area: target-4;
+} 
+
+.div-target{
+    background-color: white;
+    border-radius: 20px;
+    height: 250px;
+    width: 350px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 5;
+    color: black;
+    text-align: center;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+}
+
+.div-target-efect{
+    background-color: rgb(2, 255, 2);
+    opacity: 45%;
+    border-radius: 20px;
+    height: 250px;
+    width: 350px;
+    position: absolute;
+    display: inline-block;
+    left: 355px;
+    top: 255px;
+}
+
+.div-target:hover{
+    font-size: 1.5rem;
+    transition: 1s;
+}
+.div-target:hover .div-target-efect{
+    position: absolute;
+    left:0;
+    top:0;
+    transition: .5s;
+    color: black;
+}
+
+
+/*body-heroes*/
+#body-heroes, #body-correo{
+    background-color: black;
+}
+#body__main--heroes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+.title-page{
+    font-family: 'Russo One';
+    color: yellow;
+    text-shadow: 3px 3px 5px rgb(139, 139, 138);
+    text-align: center;
+}
+
+.heroeGalaxtic{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 450px;
+    width: 300px;
+    background-image: url(/media/fondoMetal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px white;
+}
+
+.img-heroe{
+    height: 210px;
+    width: 210px;
+    border-radius: 15px;
+    margin-left: 47px;
+    border: 2px solid black;
+}
+
+.heroe-descrip{
+    background-color: black;
+    color: yellow;
+    border-radius: 15px;
+    height: 150px;
+    width: 250px;
+    padding: 10px;
+    margin-left: 18px;
+}
+
+.btn-heroe{
+    border-radius: 5px;
+    background-color: rgb(46, 44, 44);
+    color: yellow;
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+}
+
+/*contacto*/
+
+#consulta-coment{
+    color: rgb(4, 255, 4);
+}
+
+#form-coment{
+    display: none;
+    align-self: center;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+.input-style{
+    display: block;
+    margin: 10px;
+    width: 500px;
+    border: 2px solid rgb(4, 255, 4);
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(4, 255, 4);
+}
+
+.input-style:focus{
+    background-color: rgb(160, 251, 160);
+    border: 0 solid transparent;
+    background-color: transparent;
+    color: rgb(4, 255, 4);
+}
+
+.requerido{
+    position: relative;
+    display: inline;
+    opacity: 75%;
+    background-color: rgb(255, 139, 139);
+    border: 2px solid red;
+    color: red;
+}
+
+.form_input-laber{
+    color:rgb(4, 255, 4);
+}
+
+#form-h1{
+    color: rgb(2, 255, 2);
+    font: bolder;
+    font-size: 2rem;
+}
+
+#entorno-iframe-video{
+    height: 100%;
+    width: 100%;
+}

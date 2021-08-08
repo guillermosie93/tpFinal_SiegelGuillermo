@@ -1,0 +1,31 @@
+[
+    {
+        "id": "heroe1",
+        "heroe": "NOMBRE: Comandante ROXSOR", 
+        "menciones": "MENCIONES: heróe del planeta -- protector de la Republica intergalaxtica -- comandante de las Fuerzas Interestelares.",
+        "victorias": "VICTORIAS: guerra del cuadrante 54BJOP -- batalla del planeta TRUXOR -- comandante en la recaptura de la estacion intergalaxticas."
+    },
+
+    {
+        "id": "heroe2",
+        "heroe": "NOMBRE: Teniente SPKUR", 
+        "menciones": "MENCIONES: heróe de la Republica Galaxitca -- protector de la Republica intergalaxtica -- teniente de las Fuerzas Interestelares y consultor en guerra espacial.",
+        "victorias": "VICTORIAS: batalla del planeta TRUXOR -- encabezo la operacion 'savage quartz'."
+    },
+
+    {
+        "id": "heroe3",
+        "heroe": "NOMBRE: Capitan PORTOFOL", 
+        "menciones": "MENCIONES: heróe de la Republica Galaxitca -- Capitan en Jefe de las Fuerzas Interestelares y Ministro para la Paz del cuadrante 18LP32.",
+        "victorias": "VICTORIAS: guerra del cuadrante 54BJOP -- batalla del planeta TRUXOR -- jefe de las negociaciones con terroristas Amicrotanos."
+    },
+
+    {
+        "id": "heroe4",
+        "heroe": "NOMBRE: General ASTIGUP", 
+        "menciones": "MENCIONES: heróe de la Republica Galaxitca -- General en Jefe de las Fuerzas Interestelares y Ministro para la Paz del cuadrante 18LP32.",
+        "victorias": "VICTORIAS: guerra del cuadrante 54BJOP -- colaboro la operacion 'savage quartz'-- agente infiltrado en la operacion 'false planet'"
+    }
+
+
+]
